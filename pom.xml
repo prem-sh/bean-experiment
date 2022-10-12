@@ -3,8 +3,8 @@
 	<groupId>io.github.premsh</groupId>
 	<artifactId>xml-appcontext-sample</artifactId>
 	<version>0.0.1</version>
-	<name>xml-appcontext-sample</name>
-	<description>xml-appcontext-sample</description>
+	<name>bean-experiment</name>
+	<description>bean experiment</description>
 	
 	<dependencies>
 		<dependency>
