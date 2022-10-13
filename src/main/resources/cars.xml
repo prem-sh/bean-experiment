@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="./components.xml"/>
+	
+	<bean id="idGenerator" name="idGenerator" class="com.premsh.xmlappcontext.IdGenerator" scope="singleton"/>
+
+	<bean id="ferrari" class="com.premsh.xmlappcontext.Car" name="ferrariCar" scope="prototype">
+		<constructor-arg  index="0" type="java.lang.String" name="model" value="Ferrari" />
+		<constructor-arg index="1" type="java.lang.String" name="brand" value="TATA" />
+		<constructor-arg index="2" type="IdGenerator" ref="idGenerator"/>
+	</bean>
+	
+</beans>
